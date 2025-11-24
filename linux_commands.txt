@@ -1,6 +1,6 @@
 
 Commands to look in to
-ufw
+ufw - firewall configuration
 uname
 whoami
 
