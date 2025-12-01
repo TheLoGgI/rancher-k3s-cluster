@@ -14,3 +14,5 @@ kill
 pkill
 history
 
+
+flux create source helm sealed-secrets --interval=1h --url=https://bitnami-labs.github.io/sealed-secrets
