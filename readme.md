@@ -29,9 +29,9 @@ kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.10.1/dep
 Installing Flux cli for local computer
 
 
-
-flux bootstrap github --components-extra=image-reflector-controller,image-automation-controller --owner=TheLoGgI --repository=rancher-k3s-cluster --branch=master --path=project/flux --read-write-key --personal
+flux bootstrap github --components-extra=image-reflector-controller,image-automation-controller --owner=TheLoGgI --repository=rancher-k3s-cluster --branch=master --path=projects/flux --read-write-key --personal
 
 ## TODO LIST
-- [ ] - Install Terraform / GitOps
-- [ ] - Install Storage Manager Longhorn
+- [ ] - GitOps
+- [x] - Install Storage Manager Longhorn
+
