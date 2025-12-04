@@ -12,6 +12,8 @@ data:
       namespace: kube-system
     spec:
       valuesContent: |-
+        dashboard:
+          enabled: true
         image:
           repository: docker.io/library/traefik
           tag: 3.3.5
