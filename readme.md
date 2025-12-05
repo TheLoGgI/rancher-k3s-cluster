@@ -31,6 +31,13 @@ Installing Flux cli for local computer
 
 flux bootstrap github --components-extra=image-reflector-controller,image-automation-controller --owner=TheLoGgI --repository=rancher-k3s-cluster --branch=master --path=projects/flux --read-write-key --personal
 
+
+## Trafik
+
+### Get TLS - Self signed Certificate
+https://doc.traefik.io/traefik/setup/kubernetes/
+
+
 ## TODO LIST
 - [ ] - GitOps
 - [x] - Install Storage Manager Longhorn
