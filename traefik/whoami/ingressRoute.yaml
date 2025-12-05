@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - web
   routes:
-  - match: Host(`whoami.docker.localhost`)
+  - match: Host(`whoami.lasseaakjaer.dk`)
     kind: Rule
     services:
     - name: whoami
