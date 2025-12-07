@@ -10,5 +10,5 @@ spec:
   - match: Host(`longhorn.lasseaakjaer.dk`)
     kind: Rule
     services:
-    - name: longhorn-ui
-      port: 8000
+    - name: longhorn-frontend
+      port: 80
