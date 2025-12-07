@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - web
   routes:
-  - match: Host(`whoami.lasseaaakjear.dk`)
+  - match: Host(`whoami.lasseaakjaer.dk`)
     kind: Rule
     services:
     - name: whoami
