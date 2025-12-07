@@ -10,7 +10,7 @@ spec:
   - match: Host(`longhorn.lasseaakjaer.dk`)
     kind: Rule
     services:
-    - name: whoami
+    - name: lornhorn-ui
       port: 8000
 apiVersion: v1
 kind: Service
