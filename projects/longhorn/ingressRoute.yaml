@@ -1,24 +1,25 @@
-# apiVersion: traefik.io/v1alpha1
-# kind: IngressRoute
-# metadata:
-#   name: lornhorn-ui
-#   namespace: lorghorn-systems
-# spec:
-#   entryPoints:
-#     - web
-#   routes:
-#   - match: Host(`longhorn.lasseaakjaer.dk`)
-#     kind: Rule
-#     services:
-#     - name: lornhorn-ui
-#       port: 8000
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: lornhorn-ui
-#   namespace: lorghorn-systems
-# spec:
-#   selector:
-#     app: lornhorn-ui
-#   ports:
-#   - port: 8000
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: lornhorn-ui
+  namespace: lorghorn-systems
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`longhorn.lasseaakjaer.dk`)
+    kind: Rule
+    services:
+    - name: lornhorn-ui
+      port: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lornhorn-ui
+  namespace: lorghorn-systems
+spec:
+  selector:
+    app: lornhorn-ui
+  ports:
+  - port: 8000
